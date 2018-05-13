@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src='main.js'></script>
+        <link rel='stylesheet' href='./style.css'>   
+        <title>Your Local Weather</title>
+    </head>
+
+    <body id="backGround">
+        <script>
+            $(document).ready(function() {
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(getWeather);
+                    }else {
+                    document.getElementById("current-local").innerHTML = "Geolocation is not supported by this browser.";
+                    }
+            })
+        </script>
+        
+        <div class="location">
+            <h1 id="title">Your Local Weather</h1>            
+            <h3 id="current-local">Your Location</h3>      
+        </div>
+
+        <div>
+            <img id="weatherIcon" src="" alt="" class="sky"><br>
+            <p id="precipt">Conditions</p><br>
+            <p id="temp">Current Tempretature</p><br>        
+            <p id="temp_max">High Tempretature</p><br>
+            <p id="temp_min">Low Tempretature</p><br>
+            <button id="cToF">Convert to F</button>
+            <button id="fToC">Convert to C</button>
+        </div>
+
+        <div class="conditions">
+            <p id="wind">Wind speed</p><br>
+            <p id="wind_gust">Wind gusts</p><br>
+            <p id="humidity">Humidity</p><br>
+        </div>
+
+        <footer>
+            <p>Site by: <a target='_blank' href='http://www.Ayllium.net'>Ayllium-Rin</a> | <a href='mailto:Ayllium1@gmail.com'>Ayllium1@gmail.com</a> | <a target='_blank' href='http://www.Ayllium.net'>Ayllium.net</a> | <a target='_blank' href='./about.html'>About</a></p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,79 @@
+body {
+    background: #333 url('https://images.pexels.com/photos/3768/sky-sunny-clouds-cloudy.jpg?auto=compress&cs=tinysrgb&h=650&w=940');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #ededcc;
+    font-size: 20px;
+    font-family: "Times New Roman", serif;
+    margin: 0;
+    overflow-x: hidden;
+    padding: 25px;
+    text-align: center;
+}
+
+footer {
+    color: #ededcc;   
+    margin 0;
+    padding 0;    
+    text-align: center;
+    font-size: 14px;
+}
+
+footer a {
+    color: #ededcc;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #555;
+}
+
+p {
+    background: #333;
+    border-radius: .5em;
+    display: inline-block;
+    margin: 10px auto;
+    opacity: .6;
+    padding: 5px;
+}
+
+button {
+    background: #ededcc;
+    border-radius: .5em;
+    color: #000;
+    font-family: "Times New Roman", serif;
+    font-weight: 700;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;    
+    text-align: center;
+}
+
+button:hover {
+    background: #333;
+    color: #ededcc;
+}
+
+#title {
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.location {
+    background: #333;
+    border-radius: .5em;
+    color: #ededcc;
+    display: inline-block;
+    font-weight: 800;
+    margin: 0;
+    opacity: .6;
+    padding: 5px;
+}
+
+.conditions {
+    display: inline-block;    
+    margin: auto;
+    padding: 10px;    
+    text-align: center;
+}
